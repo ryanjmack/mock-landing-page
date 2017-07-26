@@ -4,21 +4,21 @@ nav {
     border-bottom: 1px solid $light-gray;
     color: $text-light;
     display: flex;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: 18px;
+        weight: 700;
+    }
     justify-content: space-between;
     padding: 0 15px 0 10px;
+    position: fixed;
     text-transform: uppercase;
+    transition: 0.5s;
+    width: 100%;
 
     a {
-        display: none;
         padding: 15px;
-
-        &:first-of-type {
-          color: $accent;
-          display: inline;
-        }
+        color: $accent;
     }
 
     button {
@@ -41,11 +41,16 @@ nav {
         display: none;
     }
 
+    /*
+    ==================
+    Non-mobile devices
+    ==================
+    */
     @media (min-width: 750px) {
         background-color: transparent;
 
         #nav-links a,
-        a:first-of-type {
+        #nav-links nav a:first-of-type {
             color: $text-light;
         }
 
@@ -64,4 +69,61 @@ nav {
             font-size: 14px;
         }
     }
+}
+
+/*
+======================================
+Styles used in JS DOM manipulation
+======================================
+--------------------------------------
+======================================
+Class added to #nav-links on mobile
+Creates a drop down
+======================================
+*/
+.mobile-nav {
+    @media (max-width: 750px) {
+        background-color: white;
+        border: {
+            left: 10px solid $text-dark;
+            bottom: 10px solid $text-dark;
+        }
+        display: block !important;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 101%;
+        transition: 0.5s;
+        width: 200px;
+
+        * {
+            border-top: 1px solid $text-dark;
+            color: $text-dark;
+            display: block;
+        }
+    }
+}
+
+/*
+=================================================================
+Changes #nav styles on large devices, when page is scrolled down
+=================================================================
+*/
+.scroll-down {
+    @media (min-width: 750px) {
+        background-color: $white;
+        border-bottom: none;
+        color: $text-dark;
+        font-size: 14px;
+        transition: 0.5s;
+    }
+}
+
+/*
+==============================================
+Used to darken the nav links on larger devices
+==============================================
+*/
+.text-dark a {
+    color: $text-dark !important;
 }
