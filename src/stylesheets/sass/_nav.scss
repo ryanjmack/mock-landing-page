@@ -17,8 +17,8 @@ nav {
     width: 100%;
 
     a {
+        color: inherit;
         padding: 15px;
-        color: $accent;
     }
 
     button {
@@ -113,7 +113,7 @@ Changes #nav styles on large devices, when page is scrolled down
     @media (min-width: 750px) {
         background-color: $white;
         border-bottom: none;
-        color: $text-dark;
+        color: $accent;
         font-size: 14px;
         transition: 0.5s;
     }
