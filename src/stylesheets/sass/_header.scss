@@ -8,6 +8,7 @@
     min-height: 100vh;
     margin: 0;
     width: 100%;
+    
     @media (min-width: 750px) {
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_1280.jpg");
     }
@@ -32,20 +33,9 @@
     width: 100%;
 
     a {
-        align-items: center;
         background-color: $accent;
-        border-radius: 33px;
         color: $white;
-        display: flex;
-        font: {
-          family: 'Open Sans', sans-serif;
-          size: 16px;
-          weight: 700;
-        }
-        height: 56px;
-        justify-content: center;
-        text-transform: uppercase;;
-        width: 173px;
+        width: 150px;
 
         &:hover {
           background-color: $accent-bright;
@@ -53,12 +43,8 @@
         }
     }
 
-    h1 {
-        font: {
-            family: 'Open Sans', sans-serif;
-            size: 36px;
-            weight: 700;
-        }
+    .heading-text {
+        font-size: 36px;
         text-transform: uppercase;
 
         @media (min-width: 750px) {
@@ -66,23 +52,12 @@
         }
     }
 
-    hr {
+    .hr {
         border-color: $accent;
-        display: block;
-        width: 21px;
+
     }
 
-    p {
+    .text {
         color: $text-light;
-        line-height: 2;
-        padding: 20px 30px;
-
-        @media (min-width: 550px) {
-          padding: 20px 60px;
-        }
-
-        @media (min-width: 750px) {
-          padding: 20px 152px;
-        }
     }
 }
