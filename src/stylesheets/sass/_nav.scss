@@ -13,12 +13,18 @@ nav {
     padding: 0 15px 0 10px;
     position: fixed;
     text-transform: uppercase;
+    top: 0;
     transition: 0.5s;
     width: 100%;
+    z-index: 5;
 
     a {
         color: $accent;
         padding: 15px;
+
+        &:hover {
+            color: $accent-bright;
+        }
     }
 
     button {
@@ -40,7 +46,6 @@ nav {
     #nav-links {
         display: none;
     }
-
     /*
     ==================
     Non-mobile devices
@@ -66,12 +71,15 @@ nav {
         }
     }
 }
-
 /*
+--------------------------------------
 ======================================
 Styles used in JS DOM manipulation
 ======================================
 --------------------------------------
+
+
+
 ======================================
 Class added to #nav-links on mobile
 Creates a drop down
@@ -99,7 +107,6 @@ Creates a drop down
         }
     }
 }
-
 /*
 =================================================================
 Changes #nav styles on large devices, when page is scrolled down
@@ -114,12 +121,17 @@ Changes #nav styles on large devices, when page is scrolled down
         transition: 0.5s;
     }
 }
-
 /*
 ==============================================
 Used to darken the nav links on larger devices
 ==============================================
 */
-.text-dark a {
-    color: $text-dark !important;
+.text-dark {
+    a {
+        color: $text-dark !important;
+
+        &:hover {
+          color: $accent-bright !important;
+        }
+    }
 }
