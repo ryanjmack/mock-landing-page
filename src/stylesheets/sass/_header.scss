@@ -1,17 +1,88 @@
 #header {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_640.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  margin: 0;
-  width: 100%;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_640.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    @media (min-width: 750px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_1280.jpg");
+    }
+    @media (min-width: 1280px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_1920.jpg");
+    }
+}
 
-  @media (min-width: 750px) {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_1280.jpg");
-  }
+.header-content {
+    align-items: center;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    top: 40%;
+    width: 100%;
 
-  @media (min-width: 1280px) {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_1920.jpg");
-  }
+    a {
+        align-items: center;
+        background-color: $accent;
+        border-radius: 33px;
+        color: $white;
+        display: flex;
+        font: {
+          family: 'Open Sans', sans-serif;
+          size: 16px;
+          weight: 700;
+        }
+        height: 56px;
+        justify-content: center;
+        text-transform: uppercase;;
+        width: 173px;
+
+        &:hover {
+          background-color: $accent-bright;
+          transition: 0.5s;
+        }
+    }
+
+    h1 {
+        font: {
+            family: 'Open Sans', sans-serif;
+            size: 36px;
+            weight: 700;
+        }
+        text-transform: uppercase;
+
+        @media (min-width: 750px) {
+          font-size: 52px;
+        }
+    }
+
+    hr {
+        border-color: $accent;
+        display: block;
+        width: 21px;
+    }
+
+    p {
+        color: $text-light;
+        line-height: 2;
+        padding: 20px 30px;
+
+        @media (min-width: 550px) {
+          padding: 20px 60px;
+        }
+
+        @media (min-width: 750px) {
+          padding: 20px 152px;
+        }
+    }
 }
