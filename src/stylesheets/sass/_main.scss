@@ -3,18 +3,21 @@ main {
     width: 100%;
 
     section {
+        padding: 50px 0;
+    }
+
+    .section-1 {
         background-color: $accent;
         color: white;
-        padding: 50px 0;
 
         .button {
-          background-color: $white;
-          color: $accent;
-          width: 170px;
+            background-color: $white;
+            color: $accent;
+            width: 170px;
 
-          &:hover {
-            background-color: #ddd;
-          }
+            &:hover {
+                background-color: #ddd;
+            }
         }
 
         .heading-text {
@@ -23,6 +26,41 @@ main {
             @media (min-width: 750px) {
                 font-size: 32px;
             }
+        }
+    }
+
+    .section-2 {
+        color: $text-dark;
+
+        .container {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1320px;
+            width: 100%;
+        }
+
+        .container-small {
+
+              @media (min-width: 1004px) and (max-width: 1200px) {
+                padding: 0 100px;
+              }
+              @media (min-width: 1200px) and (max-width: 1335px) {
+                padding: 0 166px;
+              }
+        }
+
+        .hr {
+            border-color: $accent;
+            margin-bottom: 30px;
+        }
+
+        i {
+            color: $accent;
+            font-size: 36px;
+        }
+
+        .text {
+            padding: 0;
         }
     }
 }
