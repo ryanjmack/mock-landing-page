@@ -39,14 +39,16 @@ main {
             width: 100%;
         }
 
+        // these media queries prevents 3 boxes on one row
+        // scales from 1 box, to 2 boxes, to 4 boxes in a row
         .container-small {
+            @media (min-width: 1000px) {
+              width: 980px;
+            }
 
-              @media (min-width: 1004px) and (max-width: 1200px) {
-                padding: 0 100px;
-              }
-              @media (min-width: 1200px) and (max-width: 1335px) {
-                padding: 0 166px;
-              }
+            @media (min-width: 1340px) {
+              width: 100%;
+            }
         }
 
         .hr {

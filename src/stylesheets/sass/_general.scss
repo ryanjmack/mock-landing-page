@@ -39,12 +39,6 @@ html {
 }
 
 .box {
-    box-shadow: 0 0 1px 1px $light-gray;
-
-    @media (min-width: 750px) {
-      box-shadow: none;
-    }
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
