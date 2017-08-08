@@ -26,7 +26,7 @@ html {
     display: flex;
     font: {
         family: 'Open Sans', sans-serif;
-        size: 16px;
+        size: 15px;
         weight: 700;
     }
     justify-content: center;
@@ -34,7 +34,7 @@ html {
     text-transform: uppercase;
 
     &:hover {
-        transition: 0.5s;
+        transition: 0.5s ease-in-out;
     }
 }
 

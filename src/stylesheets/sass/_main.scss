@@ -66,3 +66,33 @@ main {
         }
     }
 }
+
+.section-4 {
+  align-items: center;
+  background-color: $off-black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0;
+
+  .button {
+    background-color: $white;
+    color: $off-black;
+    width: 150px;
+
+    &:hover {
+      background-color: $lightest-gray;
+    }
+  }
+
+  .heading-text {
+    font: {
+      size: 32px;
+      weight: 400;
+    }
+    margin: 5px 0 10px;
+    padding: 0;
+  }
+
+
+}
