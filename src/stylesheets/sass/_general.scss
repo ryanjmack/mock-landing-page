@@ -13,6 +13,7 @@ a {
 
 body {
     font-family: 'Merriweather', serif;
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -48,8 +49,8 @@ html {
     width: 290px;
 
     .heading-text {
-      margin-bottom: 5px;
-      padding: 10px;
+        margin-bottom: 5px;
+        padding: 10px;
     }
 }
 
@@ -74,7 +75,12 @@ html {
         family: 'Open Sans', sans-serif;
         weight: 700;
     }
-    line-height: 2;
+    line-height: 1.5;
+    @media (min-width: 500px) {
+      line-height: 2;
+    }
+    margin-bottom: 0;
+
     padding: 15px;
 }
 
