@@ -59,6 +59,10 @@ nav {
             display: inline;
             margin: 0 10px;
             padding: 15px 5px;
+
+            &:hover {
+              color: $accent;
+            }
         }
 
         button {
@@ -88,22 +92,31 @@ Creates a drop down
 .mobile-nav {
     @media (max-width: 750px) {
         background-color: white;
-        border: {
-            left: 10px solid $text-dark;
-            bottom: 10px solid $text-dark;
-        }
+        border-left: 5px solid black;
         display: block !important;
         justify-content: center;
         position: absolute;
         right: 0;
         top: 101%;
-        transition: 0.5s;
-        width: 200px;
+        transition: 0.5s ease-in-out;
+        width: 100%;
+        z-index: 5;
 
         * {
             border-top: 1px solid $text-dark;
             color: $text-dark;
             display: block;
+        }
+
+        &:before {
+          background-color: rgba(0, 0, 0, 0.8);
+          content: "";
+          height: 100vh;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 100vw;
+          z-index: 1;
         }
     }
 }
@@ -131,7 +144,7 @@ Used to darken the nav links on larger devices
         color: $text-dark !important;
 
         &:hover {
-          color: $accent-bright !important;
+          color: $accent !important;
         }
     }
 }
