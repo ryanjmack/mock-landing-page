@@ -1,27 +1,27 @@
-# frontend-project-template
+# freeCodeCamp Landing Page Project
 
-This is boilerplate code for simple front end projects.
+----
 
-## Getting Started
-* Clone this repository
-* Navigate to the the root of the cloned repo
-* Reference the original boilerplate using `git remote add upstream URL`. This allows you to pull changes made to the boilerplate code in the future using `git pull upstream master`
-* Initialize an empty repo on Github and change the remote's URL `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
-* Use`npm install` to get all required node modules
-* Use `gulp` to run default task
-* Start coding
+## Synopsis
 
-## Basics
-The folder `src` is the development build
+This is a project based off of freeCodeCamp's Responsive Web Design Landing Page project.
 
-The folder `build` is the production build (minified/concatenated files etc)
+## Code Example
 
-## List of gulp tasks
-* `gulp` (default) - runs styles then serve
-* `gulp styles` - converts scss to css in `src/stylesheets` folder; also sets up sourcemaps for scss debugging
-* `gulp serve` - creates a webserver for browsersync which then watches for any html/scss changes
+You can check it out [here](https://ryanjmack.github.io/fcc-landing-page/)!
 
+## Motivation
 
-## TODO
+This is a continuation of the projects for the Responsive Web Design Curriculum at freeCodeCamp. This was made responsive using just CSS with *no* libraries or frameworks.
 
-* Add more gulp tasks for production build -> concat, minify, JavaScript etc.
+This project really helped me get even more comfortable with HTML/CSS, gulp and also SCSS. Even more I learned what I can do even better next time in regards to project design and architecture.
+
+For my next project (freeCodeCamp's Technical Documentation Page) I am going to to focus on two things: using relative units such as em and rem more (especially for breakpoints/media queries), and also learning how to better organize my CSS with a methodology such as BEM.
+
+I also want gain a deeper understanding of flexbox so I am currently taking the course (and am more than 80% done with) [*What the Flexbox?!*](https://flexbox.io/).
+
+Overall each project pushes the boundaries of what I know and what I still don't know. This excites me because with each project I feel I am steadily getting more proficient with my work.
+
+## Acknowledgements
+
+[CSS-Tricks](https://css-tricks.com/) has been one of my go to resource for some of the components of my project. It is such an immensely helpful site for all CSS related things!
