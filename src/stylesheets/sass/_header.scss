@@ -5,17 +5,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     width: 100%;
 
-    @media (min-width: 750px) {
+    @media screen and (orientation: landscape) and (max-width: 600px) {
+        height: 125vh;
+    }
+    @media screen and (min-width: 750px) {
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_1280.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    @media (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../images/header_1920.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -35,7 +38,6 @@
     padding: 75px 0;
     position: relative;
     text-align: center;
-    top: 40%;
     width: 100%;
 
     a {

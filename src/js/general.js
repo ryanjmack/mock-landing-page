@@ -12,7 +12,7 @@
     }, false);
 
     window.addEventListener("scroll", function() {
-        if (document.body.scrollTop > 0) {
+        if (document.body.scrollTop > 0 || window.pageYOffset > 0) {
             nav.classList.add("scroll-down");
             navLinks.classList.add("text-dark");
         } else {

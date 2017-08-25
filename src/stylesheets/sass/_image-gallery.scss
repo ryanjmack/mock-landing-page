@@ -21,6 +21,7 @@
     */
     .image-container {
         display: flex;
+        height: auto;
         justify-content: center;
         width: 100%;
         @media (min-width: 649px) {
