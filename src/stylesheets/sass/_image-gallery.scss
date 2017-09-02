@@ -20,7 +20,6 @@
       Mobile - 1 photo per row, ~tablet 2 per row, large devices 3 per row
     */
     .image-container {
-        height: auto;
         position: relative;
         width: 100%;
         @media (min-width: 649px) {
@@ -30,7 +29,7 @@
             width: 33.3333%;
         }
 
-        &:hover {
+        &:hover, &:focus {
             .background {
                 opacity: 1;
                 // show the span element
@@ -50,7 +49,7 @@
             top: 0;
             transition: all 0.5s;
             width: 100%;
-            z-index: 999;
+            z-index: 4;
 
             span {
                 color: $white;
@@ -84,6 +83,7 @@
         img {
             height: 100%;
             width: 100%;
+            object-fit: cover;
             opacity: 1;
             transition: 0.3s ease-in-out;
         }
