@@ -1,4 +1,4 @@
-# [frontend-project-template] License
+# [FCC Landing Page] License
 
 ## MIT License
 
