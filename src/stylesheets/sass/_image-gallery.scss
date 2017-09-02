@@ -20,9 +20,7 @@
       Mobile - 1 photo per row, ~tablet 2 per row, large devices 3 per row
     */
     .image-container {
-        display: flex;
         height: auto;
-        justify-content: center;
         position: relative;
         width: 100%;
         @media (min-width: 649px) {
@@ -30,6 +28,16 @@
         }
         @media (min-width: 1200px) {
             width: 33.3333%;
+        }
+
+        &:hover {
+            .background {
+                opacity: 1;
+                // show the span element
+                span {
+                    opacity: 1;
+                }
+            }
         }
 
         .background {
@@ -43,15 +51,6 @@
             transition: all 0.5s;
             width: 100%;
             z-index: 999;
-
-            &:hover {
-                opacity: 1;
-
-                // show the span element
-                span {
-                    opacity: 1;
-                }
-            }
 
             span {
                 color: $white;
@@ -75,7 +74,7 @@
     }
 
     figure {
-        height: auto;
+        height: 100%;
         margin: 0;
         // relative position to set coordinates for absolutely positioned span element
         position: relative;
