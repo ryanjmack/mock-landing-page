@@ -8,7 +8,7 @@ This is a project based off of freeCodeCamp's Responsive Web Design Landing Page
 
 ## Code Example
 
-You can check it out [here](https://ryanjmack.github.io/fcc-landing-page/)!
+You can check it out [here](https://ryanjmack.github.io/mock-landing-page/)!
 
 ## Motivation
 
